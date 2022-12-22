@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<br>
+<h2>Proizvodi</h2>
+    <ul>
+        {% for product in productList %}
+            <li>
+                Ime: {{ product.name }}<br>
+                Cijena: {{ product.price }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

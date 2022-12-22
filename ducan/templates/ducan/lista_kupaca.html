@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Kupci </h2>
+<br>
+<ul>
+    {% for customer in customerList %}
+        <li>
+            Ime: {{ customer.name }}<br>
+            Email: {{ customer.email }}<br>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

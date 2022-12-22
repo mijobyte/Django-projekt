@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Trgovina</title>
+
+</head>
+<body>
+    <h1>Trgovina</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+
+        <ul>  
+            <li><a href="">Naslovna</a></liv>
+            <li><a href="/Customers">Kupci</a></liv>
+            <li><a href="/Products">Proizvodi</a></liv>
+            <li><a href="/Orders">Narudžbe</a></liv>
+            <li><a href="/OrderItems">Predmet Narudžbi</a></liv>
+            <li><a href="/ShippingAddresses">Adrese</a></liv>
+        </ul>
+        
+        {% endblock %}
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
